@@ -2,8 +2,7 @@ package ru.netology.radio;
 
 public class Radio {
     private int currentRadioStation;
-    private int Level;
-    private int currentVolume;
+       private int currentVolume;
 
 
     public int getCurrentRadioStation() {
@@ -16,10 +15,6 @@ public class Radio {
         return currentVolume;
     }
 
-    public int getLevel() {
-
-        return Level;
-    }
 
     public void NextRadioStation() {
         if (currentRadioStation == 9) {

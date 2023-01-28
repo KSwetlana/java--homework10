@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ru.netology.radio.RadioTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.294 s <<< FAILURE! - in ru.netology.radio.RadioTest
-shouldincreaseVolume1  Time elapsed: 0.058 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <10> but was: <1>
-	at ru.netology.radio.RadioTest.shouldincreaseVolume1(RadioTest.java:129)
-
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in ru.netology.radio.RadioTest

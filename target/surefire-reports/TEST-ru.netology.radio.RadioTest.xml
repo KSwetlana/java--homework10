@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.radio.RadioTest" time="0.294" tests="16" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.radio.RadioTest" time="0.097" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\HP\.jdks\corretto-11.0.15\bin"/>
-    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire17149397858743133895\surefirebooter7134990090230544674.jar C:\Users\HP\AppData\Local\Temp\surefire17149397858743133895 2023-01-23T23-19-18_762-jvmRun1 surefire5622174399465718950tmp surefire_012655164926023721690tmp"/>
+    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire5822862789427868134\surefirebooter4266084998479093913.jar C:\Users\HP\AppData\Local\Temp\surefire5822862789427868134 2023-01-28T21-58-36_195-jvmRun1 surefire15755811304454693671tmp surefire_010949687088426129189tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\HP\IdeaProjects\Homework10\target\test-classes;C:\Users\HP\IdeaProjects\Homework10\target\classes;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire17149397858743133895\surefirebooter7134990090230544674.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire5822862789427868134\surefirebooter4266084998479093913.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.15+9-LTS"/>
@@ -61,24 +61,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldNextRadioStation" classname="ru.netology.radio.RadioTest" time="0.1"/>
+  <testcase name="shouldNextRadioStation" classname="ru.netology.radio.RadioTest" time="0.03"/>
   <testcase name="souldPrevRadioStation2" classname="ru.netology.radio.RadioTest" time="0.001"/>
-  <testcase name="shouldsetRadioStation1" classname="ru.netology.radio.RadioTest" time="0"/>
-  <testcase name="shouldsetRadioStation2" classname="ru.netology.radio.RadioTest" time="0.005"/>
-  <testcase name="shouldsetRadioStation3" classname="ru.netology.radio.RadioTest" time="0.004"/>
+  <testcase name="shouldsetRadioStation1" classname="ru.netology.radio.RadioTest" time="0.003"/>
+  <testcase name="shouldsetRadioStation2" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="shouldsetRadioStation3" classname="ru.netology.radio.RadioTest" time="0.003"/>
   <testcase name="shouldsetRadioStation4" classname="ru.netology.radio.RadioTest" time="0.001"/>
-  <testcase name="shouldsetRadioStation5" classname="ru.netology.radio.RadioTest" time="0.002"/>
-  <testcase name="setVolume1" classname="ru.netology.radio.RadioTest" time="0.003"/>
-  <testcase name="setVolume2" classname="ru.netology.radio.RadioTest" time="0.005"/>
-  <testcase name="setVolume3" classname="ru.netology.radio.RadioTest" time="0.002"/>
-  <testcase name="shouldincreaseVolume1" classname="ru.netology.radio.RadioTest" time="0.058">
-    <failure message="expected: &lt;10&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <10> but was: <1>
-	at ru.netology.radio.RadioTest.shouldincreaseVolume1(RadioTest.java:129)
-]]></failure>
-  </testcase>
-  <testcase name="shouldincreaseVolume2" classname="ru.netology.radio.RadioTest" time="0.001"/>
-  <testcase name="shouldPrevRadioStation" classname="ru.netology.radio.RadioTest" time="0.002"/>
-  <testcase name="shouldNextRadioStation2" classname="ru.netology.radio.RadioTest" time="0.003"/>
-  <testcase name="shouldreduceVolume1" classname="ru.netology.radio.RadioTest" time="0.002"/>
+  <testcase name="shouldsetRadioStation5" classname="ru.netology.radio.RadioTest" time="0.001"/>
+  <testcase name="setVolume1" classname="ru.netology.radio.RadioTest" time="0.002"/>
+  <testcase name="setVolume2" classname="ru.netology.radio.RadioTest" time="0.004"/>
+  <testcase name="setVolume3" classname="ru.netology.radio.RadioTest" time="0.001"/>
+  <testcase name="shouldincreaseVolume1" classname="ru.netology.radio.RadioTest" time="0.002"/>
+  <testcase name="shouldincreaseVolume2" classname="ru.netology.radio.RadioTest" time="0.002"/>
+  <testcase name="shouldincreaseVolume3" classname="ru.netology.radio.RadioTest" time="0.002"/>
+  <testcase name="shouldPrevRadioStation" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="shouldNextRadioStation2" classname="ru.netology.radio.RadioTest" time="0.002"/>
+  <testcase name="shouldreduceVolume1" classname="ru.netology.radio.RadioTest" time="0.001"/>
   <testcase name="shouldreduceVolume2" classname="ru.netology.radio.RadioTest" time="0.002"/>
 </testsuite>

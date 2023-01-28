@@ -124,7 +124,7 @@ public class RadioTest {
         service.setVolume(10);
         service.increaseVolume();
 
-        int expected = 10;
+        int expected = 1;
         int actual = service.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
 
@@ -141,6 +141,21 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @ Test
+    public void shouldincreaseVolume3() {
+        Radio service = new Radio();
+        service.setVolume(11);
+        service. increaseVolume();
+
+        int expected = 1;
+        int actual = service.getCurrentVolume();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+
+
 
 
     @Test
