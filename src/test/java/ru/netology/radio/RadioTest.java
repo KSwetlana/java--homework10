@@ -117,21 +117,8 @@ public class RadioTest {
 
 
 
-
     @Test
     public void shouldincreaseVolume1() {
-        Radio service = new Radio();
-        service.setVolume(10);
-        service.increaseVolume();
-
-        int expected = 1;
-        int actual = service.getCurrentVolume();
-        Assertions.assertEquals(expected, actual);
-
-    }
-
-    @Test
-    public void shouldincreaseVolume2() {
         Radio service = new Radio();
         service.setVolume(8);
         service. increaseVolume();
@@ -142,21 +129,30 @@ public class RadioTest {
 
     }
 
-    @ Test
-    public void shouldincreaseVolume3() {
+
+    @Test
+    public void shouldincreaseVolume2() {
         Radio service = new Radio();
-        service.setVolume(11);
+        service.setVolume(10);
         service. increaseVolume();
 
-        int expected = 1;
+        int expected = 10;
         int actual = service.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
 
     }
 
+    @Test
+    public void shouldincreaseVolume3() {
+        Radio service = new Radio();
+        service.setVolume(15);
+        service. increaseVolume();
 
+        int expected = 10;
+        int actual = service.getCurrentVolume();
+        Assertions.assertEquals(expected, actual);
 
-
+    }
 
     @Test
     public void shouldreduceVolume1() {
@@ -172,6 +168,18 @@ public class RadioTest {
 
     @Test
     public void shouldreduceVolume2() {
+        Radio service = new Radio();
+        service.setVolume(0);
+        service.reduceVolume();
+
+        int expected = 0;
+        int actual = service.getCurrentVolume();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void shouldreduceVolume3() {
         Radio service = new Radio();
         service.setVolume(-1);
         service.reduceVolume();
@@ -193,28 +201,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
-    @Test
-    public void setVolume2() {
-        Radio service = new Radio();
-        service.setVolume(10);
 
-
-        int expected = 0;
-        int actual = service.getCurrentVolume();
-        Assertions.assertEquals(expected, actual);
-
-    }
-
-    @Test
-    public void setVolume3() {
-        Radio service = new Radio();
-        service.setVolume(-1);
-
-
-        int expected = 0;
-        int actual = service.getCurrentVolume();
-        Assertions.assertEquals(expected, actual);
-
-    }
 
 }
