@@ -3,18 +3,18 @@ package ru.netology.radio;
 public class Radio {
     private int currentRadioStation;
     private int currentVolume;
+    private int maxStationNum;
 
-    public Radio(int currentRadioStation) {
-        if (currentRadioStation >= 0 && currentRadioStation <= 9) {
-            this.currentRadioStation = currentRadioStation;
+    public Radio(int maxStationNum) {
+        this.maxStationNum = 10;
+        if (maxStationNum <=0 && maxStationNum > 10) {
+            System.out.println ("Задан не верный диапозон");
         }
     }
 
     public Radio() {
-        this.currentRadioStation = currentRadioStation;
+
     }
-
-
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
@@ -22,31 +22,34 @@ public class Radio {
     }
 
     public int getCurrentVolume() {
-
         return currentVolume;
+
     }
 
-
+    public int getMaxStationNum() {
+        return maxStationNum;
+    }
 
     public void NextRadioStation() {
-        if (currentRadioStation == 9) {
+        if (currentRadioStation == maxStationNum -1) {
             currentRadioStation = 0;
         } else {
             currentRadioStation = currentRadioStation + 1;
 
         }
     }
-
     public void PrevRadioStation() {
-        if (currentRadioStation == 0) {
+        if (currentRadioStation == maxStationNum -10) {
             currentRadioStation = 9;
         } else {
             currentRadioStation = currentRadioStation - 1;
         }
     }
 
-    public void setRadioStation(int currentRadioStation) {
-        this.currentRadioStation = currentRadioStation;
+    public void setRadioStation(int currentRadioStation, int maxStationNum) {
+        if (currentRadioStation >= maxStationNum -10 && currentRadioStation <= maxStationNum -1 ) {
+            this.currentRadioStation = currentRadioStation;
+        }
     }
 
 
