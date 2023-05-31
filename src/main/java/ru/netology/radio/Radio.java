@@ -6,12 +6,7 @@ public class Radio {
     private int maxStationNum;
 
     public Radio(int maxStationNum) {
-        if (maxStationNum <= 0 && maxStationNum > 10) {
-            System.out.println("Задан не верный диапозон");
-        } else {
-            this.maxStationNum = maxStationNum;
-        }
-
+        this.maxStationNum = maxStationNum;
     }
 
     public Radio() {
@@ -30,31 +25,34 @@ public class Radio {
 
     public int getMaxStationNum() {
         return maxStationNum;
-    }
+            }
+
 
     public void NextRadioStation() {
-        if (maxStationNum >= 10) {
+        if (currentRadioStation == maxStationNum - 1) {
             currentRadioStation = 0;
         } else {
-            currentRadioStation = maxStationNum - 1;
+            currentRadioStation = currentRadioStation + 1;
 
         }
     }
 
     public void PrevRadioStation() {
-        if ( maxStationNum <= 0) {
-            currentRadioStation = 9;
+        if (currentRadioStation == 0) {
+            currentRadioStation = maxStationNum -1 ;
         } else {
-            currentRadioStation = maxStationNum - 2;
+            currentRadioStation = currentRadioStation - 1;
         }
     }
 
-    public void setRadioStation(int maxStationNum) {
-        if (currentRadioStation >= maxStationNum - 10 && currentRadioStation <= maxStationNum - 1) {
+    public void setRadioStation(int currentRadioStation) {
+        if (currentRadioStation >= 0 && currentRadioStation < maxStationNum) {
             this.currentRadioStation = currentRadioStation;
+
+        } else {
+            System.out.println("error");
         }
     }
-
 
     public void increaseVolume() {
 
