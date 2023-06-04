@@ -23,30 +23,25 @@ public class Radio {
 
     }
 
-    public int getMaxStationNum() {
-        return maxStationNum;
-            }
-
-
-    public void NextRadioStation() {
-        if (currentRadioStation == maxStationNum - 1) {
+       public void NextRadioStation() {
+        if (maxStationNum >= 10) {
             currentRadioStation = 0;
         } else {
-            currentRadioStation = currentRadioStation + 1;
+            currentRadioStation = maxStationNum;
 
         }
     }
 
     public void PrevRadioStation() {
-        if (currentRadioStation == 0) {
-            currentRadioStation = maxStationNum -1 ;
+        if (maxStationNum <= 1) {
+            currentRadioStation = 9 ;
         } else {
-            currentRadioStation = currentRadioStation - 1;
+            currentRadioStation = maxStationNum - 2;
         }
     }
 
-    public void setRadioStation(int currentRadioStation) {
-        if (currentRadioStation >= 0 && currentRadioStation < maxStationNum) {
+    public void setMaxStationNum() {
+        if (maxStationNum >= 1 && maxStationNum <=10 ) {
             this.currentRadioStation = currentRadioStation;
 
         } else {
