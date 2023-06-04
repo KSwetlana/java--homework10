@@ -23,7 +23,7 @@ public class Radio {
 
     }
 
-       public void NextRadioStation() {
+    public void NextRadioStation() {
         if (maxStationNum >= 10) {
             currentRadioStation = 0;
         } else {
@@ -34,18 +34,16 @@ public class Radio {
 
     public void PrevRadioStation() {
         if (maxStationNum <= 1) {
-            currentRadioStation = 9 ;
+            currentRadioStation = 9;
         } else {
             currentRadioStation = maxStationNum - 2;
         }
     }
 
     public void setMaxStationNum() {
-        if (maxStationNum >= 1 && maxStationNum <=10 ) {
+        if (maxStationNum >= 1 && maxStationNum <= 10) {
             this.currentRadioStation = currentRadioStation;
 
-        } else {
-            System.out.println("error");
         }
     }
 
@@ -72,6 +70,8 @@ public class Radio {
         }
     }
 }
+
+
 
 
 

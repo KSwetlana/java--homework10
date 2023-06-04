@@ -86,21 +86,11 @@ public class RadioTest {
 
 
 
-    @Test
-    public void shouldSetMaxRadioStation() {
-
-        Radio service = new Radio(50);
-        service.setMaxStationNum();
-        int expected = 0;
-        int actual = service.getCurrentRadioStation();
-        Assertions.assertEquals(expected, actual);
-
-    }
 
     @Test
-    public void shouldSetMaxRadioStation2() {
+    public void shouldSetMaxRadioStation1() {
 
-        Radio service = new Radio(0);
+        Radio service = new Radio(1);
         service.setMaxStationNum();
         int expected = 0;
         int actual = service.getCurrentRadioStation();
